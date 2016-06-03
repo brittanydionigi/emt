@@ -6,19 +6,188 @@
 
     h2 { font-weight: 300; line-height: 12px; border-bottom: 3px solid #fceaff; margin-top: 50px; }
     h3 { font-size: 13px; text-transform: uppercase; margin: 30px 0 0 0; }
-    .say, .do { padding: 5px 10px; border-radius: 3px; color: rgba(0,0,0,0.75); }
+    .say, .do, .action, .ask { font-weight: 300; padding: 7px 10px 5px 10px; border-radius: 3px; color: rgba(0,0,0,0.75); }
     .say { background-color: #def3ff; }
     .do { background-color: #abd8b9; }
+    .action { background-color: #ffc773; font-weight: bold; }
+    .ask { background-color: #f5b6f5; }
 
-    .say .do { margin-left: 5px; margin-right: -10px; }
-    ul, li { list-style-type: none; margin: 8px 0px; padding: 0px; }
+    span span { margin-left: 5px; margin-right: -10px; }
+    ul, li { list-style-type: none; margin: 10px 0px; padding: 0px; }
     ul.equipment { padding: 0px; margin: 0px; }
-    ul.equipment li { margin: 0px; font-size: 13px; }
+    ul.equipment li { margin: 0px; font-size: 10px; line-height: 15px; text-transform: uppercase; }
     ul.fab-five li { display: inline-block; margin: 0px; padding: 0px; }
+
+    ul li ul { padding-left: 15px; }
+
+    b { font-weight: 600; }
+    .tiny { font-size: 10px; text-transform: uppercase; margin-right: 10px; }
   </style>
 </head>
 <body>
   <h1>Assessment</h1>
+  <h2>Trauma</h2>
+  <h3>Equipment:</h3>
+  <ul class="equipment">
+    <li>c-collar</li>
+    <li>tourniquets</li>
+    <li>trauma dressings, petroleum dressings</li>
+  </ul>
+  <h3>Fab Five</h3>
+  <ul class="fab-five">
+    <li><span class="say">BSI</span></li>
+    <li><span class="say">scene safety</span></li>
+    <li><span class="say">nature of illness</span></li>
+    <li><span class="say"># of patients</span></li>
+    <li><span class="say">additional resources</span></li>
+  </ul>
+
+  <h3>AVPU</h3>
+  <ul>
+    <li><span class="say">Holding c-spine</span></li>
+    <li><span class="say">Sir are you ok, are you ok?</span></li>
+    <li><span class="say">Pinching the ear and trap</span></li>
+    <li><span class="say">Patient is unresponsive</span></li>
+  </ul>
+
+  <h3>Airway</h3>
+  <ul>
+    <li><span class="say">Opening the airway with a jaw thrust and assessing for patency</span></li>
+    <li>
+      <span class="ask">Do I have patency?</span>
+      <ul>
+        <li>
+          <span class="action">Yes &raquo;
+            <span class="say">Sizing & inserting an OPA, measuring from corner of the mouth to bottom of the ear
+              <span class="ask">Does the patient accept?</span>
+            </span>
+          </span>
+        </li>
+        <li><span class="action">No &raquo;&nbsp; <span class="say">My partner will suction for 15 seconds, do I have patency?</span></span></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>Breathing</h3>
+  <ul>
+    <li><span class="say">Looking, listening and feeling for rate rhythm and quality of breathing for 5-10 seconds</span></li>
+    <li>
+      <span class="say">Visualizing the chest for equal chest rise and any obvious injuries</span>
+      <ul>
+        <li>
+          <span class="action">Obvious chest injury &raquo;</span>
+            <ul>
+              <li><span class="say">Partner grab c-spine so I can treat the chest injury</span></li>
+              <li><span class="do"><b>Open Wound:</b> petroleum, occlusive dressing taped on 3 sides</span></li>
+              <li><span class="do"><b>Penetration:</b> stabilize penetration in place</span></li>
+              <li><span class="do"><b>Flail segment:</b> stabilize flail segment with trauma dressing</span></li>
+            </ul>
+          </span>
+        </li>
+        <li><span class="action">No obvious chest injury &raquo;</span>
+          <ul><li><span class="do">Continue</span></li></ul>
+        </li>
+      </ul>
+    </li>
+    <li><span class="say">My partner will administer oxygen at 15 liters/minute via non-rebreather</span></li>
+    <li><span class="say">and take over c-spine so I can assess circulation</span></li>
+  </ul>
+
+  <h3>Circulation</h3>
+  <ul>
+    <li><span class="say">Checking carotid and radial pulses for rate rhythm and quality for 5-10 seconds</span></li>
+    <li><span class="say">Checking cap refill</span></li>
+    <li><span class="say">Visualizing the skin for color, temperature, condition</span></li>
+    <li><span class="say">Exposing the chest, visualizing the entire body & checking voids for any major bleeding <span class="do">Look at gloves after each void check</span></span></li>
+    <li>
+      <span class="ask">Do I find anything?</span>
+      <ul>
+        <li><span class="say"><b>Bleeding from femoral artery: </b> applying direct pressure for 1 minute; bleeding doesn't stop - apply tourniquet</span></li>
+    </li>
+  </ul>
+
+  <h3>Rapid Assessment</h3>
+  <ul>
+    <li><span class="say">Initial assessment is complete, we'll stay on scene for a rapid assessment</span></li>
+    <li><span class="say">and look for DCAPBLSTIC - <span class="tiny">deformities, contusions, abrasions, penetrations, burns, lacerations, swelling, tenderness, instability, crepitus</span></span></li>
+  </ul>
+
+  <h3>Head</h3>
+  <ul>
+    <li><span class="say">Palpating the bones of the skull: <span class="tiny">frontal, occipital, temporal, parietal</span></span></li>
+    <li><span class="say">Checking the pupils for equality and reactivity</span></li>
+    <li><span class="say">Checking the nose and ears for any blood or CSF</span></li>
+    <li>
+      <span class="ask">Do I find anything?</span>
+      <ul>
+        <li><span class="action">YES &raquo; <span class="say">Covering that with a loose dressing</span></li>
+      </ul>
+    </li>
+    <li><span class="say">Palpating the orbits, zygomas, maxilla and mandible</span></li>
+    <li><span class="say">Reassessing a patent airway and adequate oxygen delivery</span></li>
+  </ul>
+
+  <h3>Neck</h3>
+  <ul>
+    <li><span class="say">Assessing the anterior neck for trach shift, or JVD</span></li>
+    <li><span class="say">Palpating the posterior neck for any stepoff</span></li>
+    <li><span class="say">Sizing and applying a collar, measuring fingers from the jaw line to the nape of the neck</span></li>
+  </ul>
+
+  <h3>Chest/Sternum</h3>
+  <ul>
+    <li><span class="say">Palpating the scapulas and clavicles</span></li>
+    <li><span class="say">Palpating the thorax looking for any subcue air</span></li>
+    <li><span class="say">Assessing stability of the ribcage</span></li>
+    <li><span class="say">Auscultating breath sounds at the midclavicular, midaxillary lines and bases, comparing one side to another</span></li>
+  </ul>
+
+
+  <h3>Abdomen</h3>
+  <ul>
+    <li><span class="say">Palpating each quadrant of the abdomen, comparing one side to the other</span></li>
+    <li><span class="say">Looking for guarding, rigidity, tenderness, distention or masses</span></li>
+  </ul>
+
+  <h3>Pelvis</h3>
+  <ul>
+    <li><span class="say">Compressing & depressing the pelvis looking for instability or crepitus</span></li>
+    <li><span class="say">Checking for priapism, bleeding or incontinence</span></li>
+  </ul>
+
+  <h3>Lower extremeties</h3>
+  <ul>
+    <li><span class="say">Palpating the femurs circumferentially</span></li>
+    <li><span class="say">Visualizing the lower legs for any obvious injuries</span></li>
+  </ul>
+
+  <h3>Upper extremeties</h3>
+  <ul>
+    <li><span class="say">Palpating each humerus circumferentially</span></li>
+    <li><span class="say">Visualizing the lower arms for any obvious injuries</span></li>
+  </ul>
+
+  <h3>Back/Log Roll</h3>
+  <ul>
+    <li><span class="say">On my partner's count we're going to log roll the patient so I can assess the posterior and we can package for transport</span></li>
+    <li><span class="say">Palpating the back of the skull, assessing the spine for any stepoff</span></li>
+    <li><span class="say">Checking for any incontinence or any other bleeding</span></li>
+    <li><span class="say">Positioning a board underneath the patient and again on my partner's count we'll roll the patient onto the board</span></li>
+  </ul>
+
+  <h3>Transport</h3>
+  <ul>
+    <li><span class="say">We're going to transport this patient</span></li>
+    <li><span class="say">En-route we'll get a baseline set of vitals and reasses every 5 minutes</span></li>
+    <li><span class="say">We'll do a detailed physical exam which includes a more thorough head-to-toe assessment</span></li>
+    <li><span class="say">Reassess any interventions & manage additional injuries</span></li>
+  </ul>
+
+
+
+
+
+
   <h2>Medical</h2>
   <h3>Equipment:</h3>
   <ul class="equipment">
