@@ -6,15 +6,22 @@
 
     h2 { font-weight: 300; line-height: 12px; border-bottom: 3px solid #fceaff; margin-top: 50px; }
     h3 { font-size: 13px; text-transform: uppercase; margin: 30px 0 0 0; }
-    .say, .do { padding: 5px 10px; border-radius: 3px; color: rgba(0,0,0,0.75); }
+    .say, .do, .action, .ask { font-weight: 300; padding: 7px 10px 5px 10px; border-radius: 3px; color: rgba(0,0,0,0.75); }
     .say { background-color: #def3ff; }
     .do { background-color: #abd8b9; }
+    .action { background-color: #ffc773; font-weight: bold; }
+    .ask { background-color: #f5b6f5; }
 
-    .say .do { margin-left: 5px; margin-right: -10px; }
-    ul, li { list-style-type: none; margin: 8px 0px; padding: 0px; }
+    span span { margin-left: 5px; margin-right: -10px; }
+    ul, li { list-style-type: none; margin: 10px 0px; padding: 0px; }
     ul.equipment { padding: 0px; margin: 0px; }
-    ul.equipment li { margin: 0px; font-size: 13px; }
+    ul.equipment li { margin: 0px; font-size: 10px; line-height: 15px; text-transform: uppercase; }
     ul.fab-five li { display: inline-block; margin: 0px; padding: 0px; }
+
+    ul li ul { padding-left: 15px; }
+
+    b { font-weight: 600; }
+    .tiny { font-size: 10px; text-transform: uppercase; margin-right: 10px; }
   </style>
 </head>
 <body>
@@ -26,6 +33,135 @@
     <li>blood pressure cuff</li>
     <li>stethoscope</li>
   </ul>
+
+  <h3>Meds</h3>
+  <ul>
+    <li>Albuterol - carried on EMS Unit
+      <ul>
+        <li><b>Indications:</b> bronchospasm, prescribed a rescue inhaler</li>
+        <li><b>Contra-Indications:</b> cardiac disorder (eschemic cardiac disease, angina, previous heart attack, bypass, stent)</li>
+        <li><b>Dosages:</b> 2.5mg albuterol in 3cc saline via nebulizer at 6 l/m (6cc saline for 6mos-2yrs)</li>
+        <li>Always call med control to administer 2nd dose</li>
+      </ul>
+    </li>
+    <li>Nitro - assisted administration
+      <ul>
+        <li><b>Indications:</b> chest pain, has a prescription for nitro</li>
+        <li><b>Contra-Indications:</b> systolic blood pressure < 90, 50 > heart rate > 100, suspected head injury, ED medication, max dose exceeded</li>
+        <li><b>Dosages:</b> 0.3mg per tablet every 3-5 minutes, max of 3 doses in 24hrs</li>
+      </ul>
+    </li>
+    <li>Baby Aspirin - carried on EMS unit
+      <ul>
+        <li><b>Indications:</b> chest discomfort suggestive of heart attack</li>
+        <li><b>Contra-Indications:</b> allergic to aspirin</li>
+        <li><b>Dosages:</b> 325mg</li>
+        <li><b>Administration:</b> instruct patient to chew aspirin</li>
+      </ul>
+    </li>
+    <li>Epinephrine - carried on EMS unit
+      <ul>
+        <li><b>Indications:</b> shows signs of severe allergic reaction</li>
+        <li><b>Contra-Indications:</b> none</li>
+        <li><b>Dosages:</b> 0.3mg in 1:1000, (0.15mg in 1:2000 < 55lbs)</li>
+        <li><b>Administration:</b> Intramuscularly into the lateral thigh, holding for 10 seconds & reassess after 5 minutes and repeat if necessary</li>
+      </ul>
+    </li>
+    <li>Narcan - carried on EMS unit</li>
+      <ul>
+        <li><b>Indications:</b> apparent opiate OD, RR < 8</li>
+        <li><b>Contra-Indications:</b> </li>
+        <li><b>Dosages:</b> 2mg per 2ml, 1mg per nostril</li>
+        <li><b>Administration:</b> spray up nose</li>
+      </ul>
+    <li>Glocuse - carried on EMS unit
+      <ul>
+        <li><b>Indications:</b> low blood sugar</li>
+        <li><b>Contra-Indications:</b> unresponsive, gag reflex</li>
+        <li><b>Dosages:</b> 1 packet</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>Conditions</h3>
+  <ul>
+    <li><b>Respiratory:</b>
+      <ul>
+        <li>Asthma</li>
+        <li>COPD</li>
+        <li>Chronic Bronchitis</li>
+        <li>Emphysema</li>
+        <li>Pulmonary Edema</li>
+        <li>Pulmonary Embolus</li>
+        <li>Cystic Fibrosis</li>
+      </ul>
+    </li>
+
+    <li><b>Cardiac:</b>
+      <ul>
+        <li>Angina</li>
+        <li>Heart Attack</li>
+        <li>Congestive Heart Failure</li>
+      </ul>
+    </li>
+
+    <li><b>Anaphylaxis:</b>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+
+    <li><b>Neuro:</b>
+      <ul>
+        <li>CVA (Cerebrovascular accident) - stroke
+          <li>Signs and symptoms:
+            <ul>
+              <li>inability to speak</li>
+              <li>hemi/mono pegia/paresis</li>
+              <li>facial droop</li>
+              <li>dyphagia</li>
+            </ul>
+          </li>
+          <li>Physical Exam:
+            <ul>
+              <li>grips</li>
+            </ul>
+          </li>
+        </li>
+
+        <li>DKA / insulin shock
+          <li>Signs and symptoms:
+            <ul>
+              <li>inability to speak</li>
+              <li>hemi/mono pegia/paresis</li>
+              <li>facial droop</li>
+              <li>dyphagia</li>
+            </ul>
+          </li>
+          <li>Physical Exam:
+            <ul>
+              <li>blood sugar</li>
+            </ul>
+          </li>
+          <li><b>Medication:</b> packet of glucose</li>
+        </li>
+
+        <li>Syncope
+          <li>Signs and symptoms:
+            <ul>
+            </ul>
+          </li>
+          <li>Physical Exam:
+            <ul>
+              <li>orthostatic signs</li>
+            </ul>
+          </li>
+        </li>
+
+      </ul>
+    </li>
+  </ul>
+
   <h3>Fab Five</h3>
   <ul class="fab-five">
     <li><span class="say">BSI</span></li>
@@ -35,12 +171,58 @@
     <li><span class="say">additional resources</span></li>
   </ul>
 
+  <h3>Initial Assessment</h3>
+  <ul>
+    <li><span class="say">Hi there, how are you doing today? What seems to be the problem?</span></li>
+    <li><span class="action">Pt can answer: <span class="say">My patient can speak to me so I have a patent airway</span></li>
+    <li><span class="say">I'm looking for work of breathing, chest rise, respiratory rate, are they speaking in full sentences?</span></li>
+    <li><span class="action">Dyspnic: <span class="say">We're going to give you some oxygen with a non-rebreather mask</span></li>
+    <li><span class="do">Check radial pulse for RRQ</span></li>
+    <li><span class="do">Touch skin for color, temperature, quality</span></li>
+  </ul>
+
+  <h3>Decision</h3>
+  <ul>
+    <li><span class="say">The patient is sick we're going to continue our assessment as we package for transport</span></li>
+  </ul>
+
+  <h3>OPQRST</h3>
+  <ul>
+    <li><span class="say">I'm just going to have my partner get a set of vital signs while we figure out what's going on</span></li>
+    <li><span class="say"><b>Onset/Time: </b>how long have you been feeling this way? did it come on suddenly? has this ever happened to you before?</span></li>
+    <li><span class="say"><b>Events: </b>what were you doing when this came on?</span></li>
+    <li><span class="say"><b>Palliative: </b>is there anything that makes this better or worse?</span></li>
+    <li><span class="say"><b>Quality: </b>can you describe your pain?</span></li>
+    <li><span class="say"><b>Radiation: </b>can you point to a spot where it hurts or is it all over?</span></li>
+    <li><span class="say"><b>Severity: </b>on a scale of 1-10 rate the severity of your complaint? how does it compare to previous episodes?</span></li>
+  </ul>
+
+
   <h3>Physical Exam</h3>
   <ul>
-    <li><span class="do"><b>Neuro:</b> pupils, equal grips</span></li>
+    <li><span class="do"><b>Neuro:</b> pupils, equal grips, orthostatic signs</span></li>
     <li><span class="do"><b>Respiratory:</b> breath sounds, tongue</span></li>
     <li><span class="do"><b>Cardiac:</b> palpate the chest</span></li>
   </ul>
+
+  <h3>SAMPLE</h3>
+  <ul>
+    <li><span class="say"><b>Signs/Symptoms:</b> verify their chief complaint</span></li>
+    <li><span class="say"><b>Allergies:</b> any allergies to medications?</span></li>
+    <li><span class="say"><b>Medications:</b> can you tell me what medications you're taking and what they're for? have you been compliant with your meds?</span></li>
+    <li><span class="say"><b>Past:</b> any other notable medical conditions, hospitalizations you might have?</span></li>
+    <li><span class="say"><b>Last Oral Intake:</b> last time you ate?</span></li>
+    <li><span class="say"><b>Events:</b> and you said you were doing ____ when this happened?</span></li>
+  </ul>
+
+  <h3>Medication</h3>
+
+  <h3>Transport</h3>
+  <ul>
+    <li><span class="say">We're going to transport our sick patient</span></li>
+    <li><span class="say">En route to the hospital we're going to reasses vital signs and interventions every 5 minutes</span></li>
+  </ul>
+
 
 </body>
 </html>
